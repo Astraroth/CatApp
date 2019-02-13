@@ -123,22 +123,21 @@ public class MainController {
         CatRestApi catRestApi = retrofit.create(CatRestApi.class);
 
         //On récupére un objet call.
-        Call<RestCatBreedResponse> call = catRestApi.getListCatBreeds();
+        //Call<RestCatBreedResponse> call = catRestApi.getListCatBreeds();
+        Call<List<CatBreed>> call = catRestApi.getListCatBreeds();
 
-        call.enqueue(new Callback<RestCatBreedResponse>() {
+        call.enqueue(new Callback<List<CatBreed>>() {
             @Override
-            public void onResponse(Call<RestCatBreedResponse> call, Response<RestCatBreedResponse> response) {
+            public void onResponse(Call<List<CatBreed>> call, Response<List<CatBreed>> response) {
 
-                RestCatBreedResponse restCatBreedResponse = response.body();
+                List<CatBreed> listCatBreed = response.body();
 
-                List<CatBreed> listCat = restCatBreedResponse.getResults();
-
-                mainActivity.showList(listCat);
+                mainActivity.showList(listCatBreed);
                 mainActivity.hideLoader();
             }
 
             @Override
-            public void onFailure(Call<RestCatBreedResponse> call, Throwable t) {
+            public void onFailure(Call<List<CatBreed>> call, Throwable t) {
                 Log.d("Erreur", "API ERROR");
             }
         });

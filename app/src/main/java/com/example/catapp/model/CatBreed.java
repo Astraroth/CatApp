@@ -3,82 +3,44 @@ package com.example.catapp.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+
 public class CatBreed {
 
-        @SerializedName("adaptability")
-        @Expose
-        private Integer adaptability;
-        @SerializedName("affection_level")
-        @Expose
-        private Integer affectionLevel;
-        @SerializedName("alt_names")
-        @Expose
-        private String altNames;
-        @SerializedName("cfa_url")
-        @Expose
-        private Integer cfaUrl;
-        @SerializedName("child_friendly")
-        @Expose
-        private Integer childFriendly;
-        @SerializedName("country_code")
-        @Expose
-        private Integer countryCode;
-        @SerializedName("country_codes")
-        @Expose
-        private Integer countryCodes;
-        @SerializedName("description")
-        @Expose
-        private Integer description;
-        @SerializedName("dog_friendly")
-        @Expose
-        private Integer dogFriendly;
-        @SerializedName("energy_level")
-        @Expose
-        private Integer energyLevel;
-        @SerializedName("experimental")
-        @Expose
-        private Integer experimental;
-        @SerializedName("grooming")
-        @Expose
-        private Integer grooming;
-        @SerializedName("hairless")
-        @Expose
-        private Integer hairless;
-        @SerializedName("health_issues")
-        @Expose
-        private Integer healthIssues;
-        @SerializedName("hypoallergenic")
-        @Expose
-        private Integer hypoallergenic;
-        @SerializedName("id")
-        @Expose
-        private String id;
-        @SerializedName("indoor")
-        @Expose
-        private Integer indoor;
-        @SerializedName("intelligence")
-        @Expose
-        private Integer intelligence;
-        @SerializedName("lap")
-        @Expose
-        private Integer lap;
-        @SerializedName("life_span")
-        @Expose
-        private String lifeSpan;
-        @SerializedName("name")
-        @Expose
-        private String name;
-        @SerializedName("natural")
-        @Expose
-        private Integer natural;
-        @SerializedName("origin")
-        @Expose
-        private String origin;
-        @SerializedName("type")
-        @Expose
-        private Object type;
+    private String name;
+    private String id;
 
-        public Integer getAdaptability() {
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+    /*private Integer adaptability;
+    private Integer affectionLevel;
+    private String altNames;
+    private Integer cfaUrl;
+    private Integer childFriendly;
+    private Integer countryCode;
+    private Integer countryCodes;
+    private Integer description;
+    private Integer dogFriendly;
+    private Integer energyLevel;
+    private Integer experimental;
+    private Integer grooming;
+    private Integer hairless;
+    private Integer healthIssues;
+    private Integer hypoallergenic;
+    private String id;
+    private Integer indoor;
+    private Integer intelligence;
+    private Integer lap;
+    private String lifeSpan;
+    private Integer natural;
+    private String origin;
+    private Object type;*/
+
+        /*public Integer getAdaptability() {
             return adaptability;
         }
 
@@ -238,9 +200,6 @@ public class CatBreed {
             this.lifeSpan = lifeSpan;
         }
 
-        public String getName() {
-            return name;
-        }
 
         public void setName(String name) {
             this.name = name;
@@ -268,6 +227,8 @@ public class CatBreed {
 
         public void setType(Object type) {
             this.type = type;
-        }
+        }*/
 
-    }
+}
+/*@SerializedName("adaptability")
+    @Expose*/
