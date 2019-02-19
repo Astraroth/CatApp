@@ -8,6 +8,9 @@ public class CatBreed {
 
     private String name;
     private String id;
+    private String origin;
+    private String description;
+    private String temperament;
 
     public String getName() {
         return name;
@@ -16,6 +19,19 @@ public class CatBreed {
     public String getId() {
         return id;
     }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getTemperament() {
+        return temperament;
+    }
     /*private Integer adaptability;
     private Integer affectionLevel;
     private String altNames;
@@ -23,7 +39,7 @@ public class CatBreed {
     private Integer childFriendly;
     private Integer countryCode;
     private Integer countryCodes;
-    private Integer description;
+
     private Integer dogFriendly;
     private Integer energyLevel;
     private Integer experimental;
@@ -37,7 +53,7 @@ public class CatBreed {
     private Integer lap;
     private String lifeSpan;
     private Integer natural;
-    private String origin;
+
     private Object type;*/
 
         /*public Integer getAdaptability() {
@@ -96,9 +112,7 @@ public class CatBreed {
             this.countryCodes = countryCodes;
         }
 
-        public Integer getDescription() {
-            return description;
-        }
+
 
         public void setDescription(Integer description) {
             this.description = description;
@@ -211,10 +225,6 @@ public class CatBreed {
 
         public void setNatural(Integer natural) {
             this.natural = natural;
-        }
-
-        public String getOrigin() {
-            return origin;
         }
 
         public void setOrigin(String origin) {
