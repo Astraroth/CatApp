@@ -1,8 +1,6 @@
 package com.example.catapp;
 
 import com.example.catapp.model.CatBreed;
-import com.example.catapp.model.RestCatBreedResponse;
-import com.example.catapp.model.RestPokemonResponse;
 
 import java.util.List;
 
